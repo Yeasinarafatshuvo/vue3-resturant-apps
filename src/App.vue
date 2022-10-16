@@ -1,5 +1,5 @@
 <template>
-  <SignUp />
+  <router-view></router-view>
 </template>
 
 <script>
@@ -18,5 +18,35 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+img {
+  height: 100px;
+  widows: 100px;
+}
+
+.register input,
+.login input {
+  width: 300px;
+  height: 40px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  border: 1px solid skyblue;
+  padding-left: 20px;
+}
+
+.register button,
+.login button {
+  width: 320px;
+  height: 40px;
+  border: 1px solid skyblue;
+  background: skyblue;
+  cursor: pointer;
+  color: #fff;
 }
 </style>
